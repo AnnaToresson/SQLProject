@@ -1,0 +1,25 @@
+Kritik av diagram
+Market Stall
+
+
+Övergripande oklart vad syftet med databasen är. Är det en väderlogg? Är det en kvittodatabas? Är det en platsdatabas? 
+
+Customer-tabellen
+- SeasonId refererar inte till någon tabell. 
+- WeatherId refererar inte till någon tabell.
+- Oklart vad Season och Weather har med Customer att göra. 
+- Varför har en kund endast ett kvitto? Just nu kan en kund endast köpa endast en produkt på endast ett kvitto. 
+
+Receipt 
+- Man kan endast köpa en produkt per kvitto. Det måste väl vara möjligt att köpa fler? 
+- Ett kvitto har ingen kund kopplat till sig. Borde inte kvitto ha en CustomerID? 
+- I övrigt är det en fullbordad tabell
+
+Parking
+- Denna visar endast storlek på parkering. Small, Medium, Large. När används denna? Behövs en tabell med antal bilar på en viss parkering för att se hur många platser som är lediga? 
+- Vill man koppla ihop till kunder som har bil?
+- Är en parkering endast till för försäljningsplats, eller fyller den den annan funktion för att parkera bilar? Det är oklart i diagramet. 
+- Just nu har parkeringen endast tre platser varav alla tre har olika storlekar. 
+
+Logg
+- Vad gör man med informationen i Logg-tabellen? Just nu relateras den inte till någon annan tabell.
